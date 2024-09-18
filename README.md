@@ -45,4 +45,4 @@ To run the project locally, follow these steps:
 3. Copy the HSLA value by clicking the "Copy HSL Value" button.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
