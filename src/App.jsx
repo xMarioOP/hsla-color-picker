@@ -43,7 +43,7 @@ const App = () => {
         <Slider name="lightness" value={colorValues.lightness} max={100} step={1} onChange={handleChange} label="L" />
         <Slider name="alpha" value={colorValues.alpha * 100} max={100} step={1} onChange={handleChange} label="A" />
       </div>
-      <button onClick={handleCopyHSL}>Copiar valor HSL</button>
+      <button onClick={handleCopyHSL}>Copy HSL value</button>
     </div>
   );
 };
