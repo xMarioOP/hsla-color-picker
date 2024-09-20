@@ -34,18 +34,22 @@ const App = () => {
 
 
   return (
-    <div className="main-container">
-      <h1 className="title">COLOR PICKER</h1>
-      <ColorBox colorValues={colorValues} />
-      <div className="inner-container">
-        <ColorValueDisplay colorValues={colorValues} />
-        <Slider name="hue" value={colorValues.hue} max={360} step={1} onChange={handleChange} label="H" />
-        <Slider name="saturation" value={colorValues.saturation} max={100} step={1} onChange={handleChange} label="S" />
-        <Slider name="lightness" value={colorValues.lightness} max={100} step={1} onChange={handleChange} label="L" />
-        <Slider name="alpha" value={colorValues.alpha * 100} max={100} step={1} onChange={handleChange} label="A" />
+    <>
+      <div className="main-container">
+        <h1 className="title">COLOR PICKER</h1>
+        <ColorBox colorValues={colorValues} />
+        <div className="inner-container">
+          <ColorValueDisplay colorValues={colorValues} />
+          <Slider name="hue" value={colorValues.hue} max={360} step={1} onChange={handleChange} label="H" />
+          <Slider name="saturation" value={colorValues.saturation} max={100} step={1} onChange={handleChange} label="S" />
+          <Slider name="lightness" value={colorValues.lightness} max={100} step={1} onChange={handleChange} label="L" />
+          <Slider name="alpha" value={colorValues.alpha * 100} max={100} step={1} onChange={handleChange} label="A" />
+        </div>
+        <button onClick={handleCopyHSL}>Copy HSL value</button>
+
+        <p className='author-text' >© 2024 Mario Ortega. All rights reserved.GitHub: <a style={{ color: `hsla(${colorValues.hue}, ${colorValues.saturation}%, ${colorValues.lightness}%, ${colorValues.alpha})` }} href="https://github.com/xMarioOP" target="_blank">xMarioOP</a></p>
       </div>
-      <button onClick={handleCopyHSL}>Copy HSL value</button>
-    </div>
+    </>
   );
 };
 

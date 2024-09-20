@@ -1,20 +1,21 @@
 /*general*/
-*{
+* {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color:#222831;
+  background-color: #222831;
   height: 100vh;
 }
 
-.title{
+.title {
   font-weight: bold;
   font-size: 3em;
   color: white;
@@ -22,68 +23,95 @@ body{
 
 /*container*/
 
-.main-container{
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 50vw;
-  max-width: 600px;
+  width: 100%;
+  max-width: 900px;
   min-height: 350px;
 }
 
-.inner-container{
+.inner-container {
   background-color: #222831;
 }
 
-.hsl-text{
+.hsl-text {
   padding: 5px;
   color: white;
 }
 
-.color-box-div{
+.color-box-div {
   border-radius: 6px;
   position: relative;
   height: 100%;
-  /* background: white; */
   width: 100%;
   z-index: -1;
 }
 
-.color-box-div img{
+.color-box-div img {
   width: 100%;
   height: 100%;
   border-radius: 6px;
 }
 
-.color-box{
+.color-box {
   margin: 5px;
-  width: 600px;
+  width: 100%;
   height: 300px;
   border-radius: 5px;
 }
 
-.color{
-  display: flex; 
+.color {
+  display: flex;
   align-items: center;
 }
 
-.color label{
+.color label {
   font-size: 2em;
   width: 27px;
   color: white;
 }
 
-button{
+button {
   font-size: 16px;
   border-radius: 20px;
   margin-top: 10px;
-  align-items: center;
   padding: 10px 15px;
 }
 
-button:hover{
-  background-color:#222831;
+button:hover {
+  background-color: #222831;
   color: white;
 }
+
+/* author text */
+.author-text {
+  color: #f8f9fa;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+
+p>a {
+  /* color: #007bff; */
+  text-decoration: none;
+}
+
+
+/* responsive */
+@media (max-width: 463px) {
+  .color-box {
+    width: 80%;
+  }
+  .author-text{
+    font-size: 0.8rem;
+  }
+}
+ 
