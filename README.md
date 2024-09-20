@@ -2,6 +2,8 @@
 
 This project is a simple and interactive color picker built using React, which allows users to adjust the hue, saturation, lightness, and alpha (transparency) values of a color using sliders. The color is represented in the HSLA format, and users can easily copy the generated HSLA value to their clipboard.
 
+You can view the application at the following link: [HSLA Color Picker](https://xmarioop.github.io/hsla-color-picker/)
+
 ## Features
 
 - **Dynamic Color Selection**: Users can modify the hue, saturation, lightness, and alpha values using sliders.
