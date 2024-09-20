@@ -4,7 +4,7 @@ const ColorValueDisplay = ({ colorValues }) => {
     const { hue, saturation, lightness, alpha } = colorValues;
     return (
         <div className="hsl-text">
-            {hue}º {saturation}% {lightness}% {alpha}
+            hsla( {hue}º {saturation}% {lightness}% {alpha})
         </div>
     );
 };

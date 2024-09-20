@@ -25,12 +25,13 @@ const App = () => {
     const hslValue = `hsla(${colorValues.hue}, ${colorValues.saturation}%, ${colorValues.lightness}%, ${colorValues.alpha})`;
     navigator.clipboard.writeText(hslValue)
       .then(() => {
-        alert('Valor HSL copiado al portapapeles');
+        alert('HSL value copied to clipboard');
       })
       .catch((error) => {
-        console.error('Error al copiar el valor HSL: ', error);
-      })
+        console.error('Error copying HSL value: ', error);
+      });
   };
+
 
   return (
     <div className="main-container">

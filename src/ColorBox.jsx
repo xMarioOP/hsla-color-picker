@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import transparentBox from './transparentBox.avif'
 
 const ColorBox = ({ colorValues }) => {
     const { hue, saturation, lightness, alpha } = colorValues;
     return (
         <div className="color-box" style={{ backgroundColor: `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha})` }}>
             <div className="color-box-div">
-                <img src='./src/transparentBox.avif' alt="Transparent Box" />
+                <img src={transparentBox} alt="Transparent Box" />
             </div>
         </div>
     );
